@@ -87,8 +87,7 @@ npx prisma db push # Pushes schema and sets up vector capacities
 
 npm run start:dev
 
-
-5. Frontend Setup (Next.js)
+4. Frontend Setup (Next.js)
 
 Bash
 
