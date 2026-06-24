@@ -57,7 +57,10 @@ Bash
 cd ../frontend
 npm install
 npm run dev
-The system will now be active with the frontend running at http://localhost:3000 and the backend listening at http://localhost:8000.📊 System Architecture VisualizedPlaintext[User Browser] 
+The system will now be active with the frontend running at http://localhost:3000 and the backend listening at http://localhost:8000.
+📊 System Architecture Visualized
+Plaintext
+[User Browser] 
        │ 
   (Next.js App Router) ─── [Zustand State Engine]
        │
