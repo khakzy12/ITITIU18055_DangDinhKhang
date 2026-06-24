@@ -1,5 +1,6 @@
 # ITITIU18055_DangDinhKhang
 AI-Driven Multimodal E-Commerce PlatformAn advanced, cost-effective full-stack e-commerce solution specializing in Visual Semantic Search and NLP-Driven Conversational Recommendations for electrical and technical products. By shifting from rigid keyword matching to local high-dimensional vector search, this platform bridges the traditional "search gap" inherent in complex hardware procurement.
+
 🚀 Core Features
 1. Multimodal Semantic Search
 Local Image Inference: Utilizes a localized CLIP (Contrastive Language-Image Pre-training) model running entirely on the application server via @xenova/transformers. No external API dependencies or recurring per-image cloud costs.
@@ -13,6 +14,7 @@ Real-Time Realism via WebSockets: Driven by NestJS and Socket.io. If the NLP pip
 Edge Middleware Security: Evaluates role-based route permissions via stateless JSON Web Tokens (JWT) before reaching backend application stacks.
 ZaloPay Gateway Integration: A secure, webhook-backed sandbox implementation processing transactions with verified HMAC-SHA256 signature signatures.
 Reactive UI State: Uses Zustand on the Next.js App Router frontend to eliminate unneeded component re-renders while unifying the global search space, chat modules, and persistent shopping cart states.
+
 🛠️ Tech Stack
 LayerTechnologies
 FrontendNext.js 15+ (App Router), Zustand, TailwindCSS
@@ -20,6 +22,7 @@ BackendNestJS, Socket.io (WebSockets), Prisma ORM
 Database & AIPostgreSQL + pgvector, @xenova/transformers (CLIP Model)
 Librariescompromise (NLP), jose (JWT at Edge)
 Payment GatewayZaloPay SDK (Sandbox)
+
 🔧 Installation & Quick StartEnsure you have Node.js (v18+) and PostgreSQL installed locally.
 1. Clone & NavigateBashgit clone https://github.com/khakzy12/ITITIU18055_DangDinhKhang.git
 cd ITITIU18055_DangDinhKhang
