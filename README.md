@@ -74,8 +74,8 @@ The system will now be active with the frontend running at http://localhost:3000
        │
  [PostgreSQL Database] 
        └───► (pgvector / Cosine Similarity Index)
-       
-📝 Project Evaluation & Roadmap
+```     
+# 📝 Project Evaluation & Roadmap
 Top-K Accuracy Metrics: Evaluated against traditional classification engines (ResNet50). CLIP's zero-shot visual patch analysis yielded drastically superior accuracy mappings across unlabelled hardware components.
 System Resilience: Implemented a definitive fallback mechanism. When natural processing metrics fall below a 78% certainty threshold, Socket.io structures gracefully trigger human escalation protocols.
 Next Horizon: Integration of multi-view 3D item embeddings to ensure complete structural clarity of complex hardware models from arbitrary user snapshots.
