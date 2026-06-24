@@ -33,13 +33,13 @@ Create a .env file in the root directory of both your frontend and backend setup
 Database Credentials
 DATABASE_URL="postgresql://kha:npg_VYKdGCD40Rnz@ep-morning-hill-a1yp0yb5-pooler.ap-southeast-1.aws.neon.tech/tech?sslmode=require&channel_binding=require"
 
-# Authentication
+Authentication
 JWT_SECRET="bd638d847bdc79d7407b0d0cda4f18bc2374630eb4492b182e0a7ebab5c81ce0"
 
-# CORS: Next.js dev server
+CORS: Next.js dev server
 FRONTEND_ORIGIN=http://localhost:3000
 
-# ZaloPay Credentials (Sandbox)
+ZaloPay Credentials (Sandbox)
 ZALOPAY_APP_ID=2554
 ZALOPAY_KEY1=sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn
 ZALOPAY_KEY2=trMrHtvjo6myautxDUiAcYsVtaeQ8nhf
@@ -59,7 +59,9 @@ npm install
 npm run dev
 The system will now be active with the frontend running at http://localhost:3000 and the backend listening at http://localhost:8000.
 📊 System Architecture Visualized
+
 Plaintext
+
 [User Browser] 
        │ 
   (Next.js App Router) ─── [Zustand State Engine]
@@ -71,6 +73,7 @@ Plaintext
        │
  [PostgreSQL Database] 
        └───► (pgvector / Cosine Similarity Index)
+       
 📝 Project Evaluation & Roadmap
 Top-K Accuracy Metrics: Evaluated against traditional classification engines (ResNet50). CLIP's zero-shot visual patch analysis yielded drastically superior accuracy mappings across unlabelled hardware components.
 System Resilience: Implemented a definitive fallback mechanism. When natural processing metrics fall below a 78% certainty threshold, Socket.io structures gracefully trigger human escalation protocols.
