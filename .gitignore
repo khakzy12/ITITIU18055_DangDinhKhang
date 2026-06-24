@@ -141,3 +141,25 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# =========================================================================
+# Custom additions for Next.js, NestJS, and Database
+# =========================================================================
+
+# NestJS build output
+/dist
+
+# Next.js build output
+/.next/
+/out
+
+# Local environment secrets (Crucial for ZaloPay keys and DB credentials)
+.env
+.env.local
+.env.production
+.env.development
+.env.*.local
+
+# IDE configurations
+.vscode/
+.idea/
