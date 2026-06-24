@@ -24,9 +24,13 @@ Librariescompromise (NLP), jose (JWT at Edge)
 Payment GatewayZaloPay SDK (Sandbox)
 
 🔧 Installation & Quick StartEnsure you have Node.js (v18+) and PostgreSQL installed locally.
-1. Clone & NavigateBashgit clone https://github.com/khakzy12/ITITIU18055_DangDinhKhang.git
+1. Clone & Navigate
+Bash
+git clone https://github.com/khakzy12/ITITIU18055_DangDinhKhang.git
 cd ITITIU18055_DangDinhKhang
-5. Environment ConfigurationCreate a .env file in the root directory of both your frontend and backend setups (referencing .env.example).Đoạn mã# Database Credentials
+2. Environment Configuration
+Create a .env file in the root directory of both your frontend and backend setups (referencing .env.example).
+Database Credentials
 DATABASE_URL="postgresql://kha:npg_VYKdGCD40Rnz@ep-morning-hill-a1yp0yb5-pooler.ap-southeast-1.aws.neon.tech/tech?sslmode=require&channel_binding=require"
 
 # Authentication
@@ -40,11 +44,17 @@ ZALOPAY_APP_ID=2554
 ZALOPAY_KEY1=sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn
 ZALOPAY_KEY2=trMrHtvjo6myautxDUiAcYsVtaeQ8nhf
 ZALOPAY_CALLBACK_URL=http://localhost:3001/api/payments/zalopay-callback
-3. Backend Setup (NestJS)Bashcd backend
+
+3. Backend Setup (NestJS)
+Bash
+cd backend
 npm install
 npx prisma db push # Pushes schema and sets up vector capacities
 npm run start:dev
-4. Frontend Setup (Next.js)Bashcd ../frontend
+
+4. Frontend Setup (Next.js)
+Bash
+cd ../frontend
 npm install
 npm run dev
 The system will now be active with the frontend running at http://localhost:3000 and the backend listening at http://localhost:8000.📊 System Architecture VisualizedPlaintext[User Browser] 
