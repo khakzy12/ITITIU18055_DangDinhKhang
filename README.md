@@ -30,13 +30,18 @@ Payment        GatewayZaloPay SDK (Sandbox)
 
 # 🔧 Installation & Quick Start
 Ensure you have Node.js (v18+) and PostgreSQL installed locally.
-1. Clone & Navigate
+1. Clone & Navigate\
+
 Bash
 
 git clone https://github.com/khakzy12/ITITIU18055_DangDinhKhang.git
+
 cd ITITIU18055_DangDinhKhang
-3. Environment Configuration
+
+2. Environment Configuration
+
 Create a .env file in the root directory of both your frontend and backend setups (referencing .env.example).
+
 Database Credentials
 
 DATABASE_URL="postgresql://kha:npg_VYKdGCD40Rnz@ep-morning-hill-a1yp0yb5-pooler.ap-southeast-1.aws.neon.tech/tech?sslmode=require&channel_binding=require"
@@ -45,35 +50,54 @@ Authentication
 
 JWT_SECRET="bd638d847bdc79d7407b0d0cda4f18bc2374630eb4492b182e0a7ebab5c81ce0"
 
+
 CORS: Next.js dev server
 
 FRONTEND_ORIGIN=http://localhost:3000
 
+
 ZaloPay Credentials (Sandbox)
+
 ZALOPAY_APP_ID=2554
+
 ZALOPAY_KEY1=sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn
+
 ZALOPAY_KEY2=trMrHtvjo6myautxDUiAcYsVtaeQ8nhf
+
 ZALOPAY_CALLBACK_URL=http://localhost:3001/api/payments/zalopay-callback
 
+
 CLOUDINARY_CLOUD_NAME=drlk8x4fe
+
 API_KEY=577361979191732
+
 API_SECRET=iCCA0KupUV_HVbvIMXOvcvN3K34
+
 CLOUDINARY_URL=cloudinary://577361979191732:iCCA0KupUV_HVbvIMXOvcvN3K34@drlk8x4fe
 
 3. Backend Setup (NestJS)
+
 Bash
 
 cd backend
+
 npm install
+
 npx prisma db push # Pushes schema and sets up vector capacities
+
 npm run start:dev
 
+
 5. Frontend Setup (Next.js)
+
 Bash
 
 cd ../frontend
+
 npm install
+
 npm run dev
+
 The system will now be active with the frontend running at http://localhost:3000 and the backend listening at http://localhost:8000.
 
 # 📊 System Architecture Visualized
